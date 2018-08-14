@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+li {
+	padding-right: 30px;
+}
+
+#carouselExampleIndicators{
+	height:250px;
+}
+.carousel-item{
+	height:250px;
+}
+
