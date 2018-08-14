@@ -14,16 +14,49 @@
 <title>User Registration with Spring Boot</title>
 
 <!-- Bootstrap core CSS -->
+
 <link
   href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   rel="stylesheet"
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous" />
-
+  
+      <link rel="stylesheet" type="text/css" media="all" href="css/login.css" />
+       <link rel="stylesheet" type="text/css" media="all" href="css/custom.css" />
+       <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css" />
 	<link th:href="@{css/style.css}" rel="stylesheet" />
 </head>
 
 <body class="gray-bg">
+<!-- Nav bar area -->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+	<a class="navbar-brand" th:href="@{/}">Jeddy Homes</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		 <span class="navbar-toggler-icon"></span>
+	 </button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Property Management<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Consultation</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Contacts</a>
+		      </li>
+		       <li class="nav-item">
+		        <a class="nav-link" th:href="@{/login}">login</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" th:href="@{/register}">Register</a>
+		      </li>
+		    </ul>
+	</div>
+</nav>
 
   <div class="middle-box text-center loginscreen animated fadeInDown">
     <div>
@@ -33,7 +66,7 @@
       <h4>New User Registration</h4>
 
       <form autocomplete="off" action="#" th:action="@{/register}"
-        th:object="${user}" method="post" class="m-t" role="form"
+        th:object="${user}" method="post" class="form-signin" role="form"
         data-toggle="validator">
 
 		
@@ -121,7 +154,8 @@
 
   <!-- Bootstrap Validator plugin -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
  
 </body>
 
