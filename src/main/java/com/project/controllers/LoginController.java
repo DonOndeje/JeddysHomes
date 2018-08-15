@@ -137,7 +137,7 @@ public class LoginController {
 	
 	@RequestMapping(value="/" , method = RequestMethod.GET)
 	public String homepage() {
-      return "homepage";
+      return "HomePage";
 	}
    @RequestMapping(value="/login", method = RequestMethod.GET)
    public String login(){
